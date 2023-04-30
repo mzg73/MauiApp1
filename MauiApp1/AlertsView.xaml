@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewContent1">
+    <VerticalStackLayout>
+        <Label 
+            Text="Alerts"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <Grid>
+                            <!-- Define 8 named rows -->
+                            <Grid.RowDefinitions>
+                                <RowDefinition x:Name="Row1"/>
+                                <RowDefinition x:Name="Row2"/>
+                                <RowDefinition x:Name="Row3"/>
+                                <RowDefinition x:Name="Row4"/>
+                                <RowDefinition x:Name="Row5"/>
+                                <RowDefinition x:Name="Row6"/>
+                                <RowDefinition x:Name="Row7"/>
+                                <RowDefinition x:Name="Row8"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Add content to each row here -->
+                            <Label Grid.Row="0" Text="---"/>
+                            <Label Grid.Row="1" Text="---"/>
+                            <Label Grid.Row="2" Text="---"/>
+                            <Label Grid.Row="3" Text="---"/>
+                            <Label Grid.Row="4" Text="---"/>
+                            <Label Grid.Row="5" Text="---"/>
+                            <Label Grid.Row="6" Text="---"/>
+                            <Label Grid.Row="7" Text="---"/>
+                        </Grid>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <Button
+                Text="View All Patients"
+                HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentView>
